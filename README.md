@@ -3,8 +3,12 @@
 Software hecho en Java para monitorear y editar entradas de alimentos consumidos de distintos usuarios, monitoreando la cantidad y los KCAL de cada uno, permitiendo editar y añadir entradas, guardando estas en un archivo .txt para conservarse después de apagado el programa.
 ---
 
+---
+
 ## Integrantes
 * **Nombre:** Agustín Muñoz | **RUT:** 22.387.587-4 | **Usuario GitHub:** Agustin-Munoz-Vargas-UCN (https://github.com/Agustin-Munoz-Vargas-UCN) | **Carrera:** Ingeniería Civil en Computación e Informática (ICCI)
+
+---
 
 ## Estructura del Repositorio
 
@@ -30,6 +34,7 @@ Software hecho en Java para monitorear y editar entradas de alimentos consumidos
             └── Terremoto.java
 ```
 
+---
 
 ## Clases presentes:
 
@@ -52,6 +57,7 @@ Software hecho en Java para monitorear y editar entradas de alimentos consumidos
 4.   **Fecha**
      * Guarda el año, mes y día (int año, int mes, int dia) en el cual se tomo un "Terremoto", y guarda los litros de "Terremoto" consumidos (float litros), permitiendo acumular lo consumido de distintas entradas que sean de la misma persona y día.
        
+---
 
 ## Opciones disponibles:
 
