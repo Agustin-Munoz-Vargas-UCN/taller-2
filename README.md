@@ -100,37 +100,23 @@ El proyecto presente utilizo Programación Orientada a Objetos (POO) y arreglos 
 
 ## Instrucciones de Ejecución
 
-> **Importante:** 
-* Como el directorio de trabajo varía entre si uno usa la terminal y el programa utilizado para crear los archivos, ***la versión presente en el archivo .zip fue creada con la intención de que funcione en la terminal.***
-* Si se decide utilizar Eclipse, se recomienda que se ejecute como aplicación de java, dándole click derecho a la carpeta src/ y dándole a Run As... 
+### Eclipse IDE.
 
-### Opción 1: Terminal.
-
-- Descargue y descomprima (Click derecho/Extraer aquí) el
-  "Agustin-Munoz-Vargas-UCN_POO_Taller01_Terminal.zip"
-
-- Abra la carpeta raíz del archivo en la terminal
-
-- Escriba "java Main.java"
-
-- Y con eso el archivo tendría que estar ejecutándose la terminal.
-
-### Opción 2: Eclipse IDE.
-
-- Descargue y descomprima (Click derecho/Extraer aquí) el
-  "Agustin-Munoz-Vargas-UCN_POO_Taller01_Eclipse.zip"
+- Descargue el archivo "Agustin-Munoz-Vargas-UCN_POO_Taller02_Eclipse.zip"
 
 - Abra Eclipse y dele a "Importar"
 
 - Seleccione "General/Archive File"
 
-- Busque el archivo descargado "Agustin-Munoz-Vargas-UCN_POO_Taller01_Eclipce.zip" y selecciónelo y continue.
+- Busque el archivo descargado "Agustin-Munoz-Vargas-UCN_POO_Taller02_Eclipce.zip" y selecciónelo y continué.
 
-- Ya con el proyecto iniciado, dele a la carpeta raíz, click derecho, "Run As/Java aplication" 
+- Ya con el proyecto iniciado, dele a la carpeta raíz, clic derecho, "Run As/Java aplication" 
 
 - Y con eso el archivo tendría que estar ejecutándose en Eclipse.
-
-
+  
+```text
+Si después de terminar un ciclo el programa empieza a dar vueltas deforma infinita, el problema surge por el "scan.close();" de la linea 644 de "Main.java", todo esto se comenta de forma preventiva en caso de haber remplazado el archivo .zip con el fallo de forma incorrecta, si no presenta este error, solo ignore esta linea... por favor.
+```
 
 ## Manejo de Casos Borde y Validaciones
 
