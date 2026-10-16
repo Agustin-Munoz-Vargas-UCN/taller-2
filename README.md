@@ -30,7 +30,6 @@ Software hecho en Java para monitorear y editar entradas de alimentos consumidos
             └── Terremoto.java
 ```
 
----
 
 ## Clases presentes:
 
@@ -53,6 +52,30 @@ Software hecho en Java para monitorear y editar entradas de alimentos consumidos
 4.   **Fecha**
      * Guarda el año, mes y día (int año, int mes, int dia) en el cual se tomo un "Terremoto", y guarda los litros de "Terremoto" consumidos (float litros), permitiendo acumular lo consumido de distintas entradas que sean de la misma persona y día.
        
+
+## Opciones disponibles:
+
+```text
+  [1] Ver registros
+     [1] Choripanes
+     [2] Terremotos
+     [3] Volver al menú principal
+  [2] Actualizar registros
+     [1] Agregar
+     [2] Editar
+     [3] Eliminar
+     [4] Volver al menú principal
+  [3] Calcular métricas
+     [1] Choripanes comidos en total
+     [2] Terremotos tomados en total
+     [3] Choripanes comidos por usuario
+     [4] Terremotos tomados por usuario
+     [5] KCal consumidas por usuario
+     [6] Días ebrio por usuario
+     [7] Volver al menú principal
+  [4] Salir
+```
+
 ---
 
 ## Estructuras de Datos y Decisiones Técnicas
@@ -64,14 +87,9 @@ El proyecto presente utilizo Programación Orientada a Objetos (POO) y arreglos 
    * Tiene un máximo de 200 integrantes.
      
 2. **Lista de entradas (Comida[] arregloComida):**
-   * Maneja la lista de consumidos que se encuentran en el archivo "Consumido.txt", se puede modificar dentro del programa en conjunto con el archivo de origen, y se dedica a guardar entradas de dos clases hijas, "Coripan" y "Terremoto":
+   * Maneja la lista de consumidos que se encuentran en el archivo "Consumido.txt", se puede modificar dentro del programa en conjunto con el archivo de origen, y se dedica a guardar entradas de dos clases hijas, "Choripan" y "Terremoto":
    * Tiene un máximo de 200 entradas.
      
----
-
-
-
-
 ---
 
 ## Requisitos del Entorno
