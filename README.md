@@ -1,7 +1,6 @@
 # Taller 02 - "La fonda del Papu"
 
 Software hecho en Java para monitorear y editar entradas de alimentos consumidos de distintos usuarios, monitoreando la cantidad y los KCAL de cada uno, permitiendo editar y añadir entradas, guardando estas en un archivo .txt para conservarse después de apagado el programa.
----
 
 ---
 
@@ -43,6 +42,8 @@ Software hecho en Java para monitorear y editar entradas de alimentos consumidos
 3.   **Choripan**    *(Persona persona, String fecha, float largo, float ancho)* (hijo de Comida)
 4.   **Terremoto**   *(Persona persona, String fecha, float litros)* (hijo de Comida)
 5.   **Fecha**       *(int año, int mes, int dia, float litros)*
+
+---
 
 ## Más detalle de las clases:
 1.   **Persona**
@@ -124,7 +125,7 @@ El proyecto presente utilizo Programación Orientada a Objetos (POO) y arreglos 
 ```text
 Si después de terminar un ciclo el programa empieza a dar vueltas deforma infinita, el problema surge por el "scan.close();" de la linea 644 de "Main.java", todo esto se comenta de forma preventiva en caso de haber remplazado el archivo .zip con el fallo de forma incorrecta, si no presenta este error, solo ignore esta linea... por favor.
 ```
-
+---
 ## Manejo de Casos Borde y Validaciones
 
 * **Control de Archivo:** Si no esta disponible, el programa tirara un aviso, y no sera capaz de funcionar por su cuenta ya que no van a haber participantes disponibles y el programa no es capaz de funcionar por su cuenta, en caso de que unicamente falte "Consumido.txt", sera capaz de generarlo de forma independiente.
