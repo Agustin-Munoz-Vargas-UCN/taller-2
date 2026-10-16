@@ -120,8 +120,7 @@ Si después de terminar un ciclo el programa empieza a dar vueltas deforma infin
 
 ## Manejo de Casos Borde y Validaciones
 
-* **Control de Archivo:** Si no esta disponible, el programa tirara un aviso, pero sera capaz de funcionar mayormente sin la necesidad de los archivos, permitiendo generar guardados hechos puramente por el programa.
-* **Fallas a la hora de ingresar inputs:** Si se presenta un argumento de formato incorrecto durante la navegación de los menus, el programa generara un reporte especial y te consultara si quieres hacer un guardado de la "lista de alumnos de la inscritos al curso" modificada antes de cerrar el programa (tanto si se genera un error como si se sale de forma intencionada), y en ciertos casos especiales, te pedirá ingresar un input forzado (como a la hora de poner un paralelo al inscribir a alguien al curso).
-* **Alumnos Duplicados:** Se verifica si los alumnos están duplicados tanto al agregar a al grupo como en la lista de alumnos.
-* **Limpieza de archivos de guardado:** Los espacios vacíos se manejan como "Srings nullos", pero si se elimina un integrante, este sera guardado con todas las entradas como "ELIMINADO", a la hora de guardar un archivo o agregar un nuevo integrante, los espacios nulos o los que dicen "ELIMINADO" serán rellenados o eliminados.
-* **Máximo de integrantes del grupo de WhatsApp:** A la hora de intentar añadir mas de 100 integrantes tirara el aviso de "[!] No quedan cupos en el grupo.".
+* **Control de Archivo:** Si no esta disponible, el programa tirara un aviso, y no sera capaz de funcionar por su cuenta ya que no van a haber participantes disponibles y el programa no es capaz de funcionar por su cuenta, en caso de que unicamente falte "Consumido.txt", sera capaz de generarlo de forma independiente.
+* **Fallas a la hora de ingresar inputs:** Si se presenta un argumento de formato incorrecto durante la navegación de los menús, el programa reiniciara el ciclo, retornandolo al menú principal sin haber guardado los últimos cambios. 
+* **Fallas al alcanzar los limites de los arreglos:** La lectura de archivos se detiene en la linea 200 del archivo de texto, y en caso de intentar generar una entrada 201 a través del programa, no sera permitido.
+* **Guardado de archivos:** Unicamente se guardan los cambios si "arregloComida" es modificado. Usando el "arregloComida" modificado, el programa sobrescribe este en el .txt, aplicando los cambios de la misma forma en el archivo y en el arreglo sin necesidad de leerlo después de iniciado el programa.
