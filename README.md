@@ -6,18 +6,53 @@ Software hecho en Java para monitorear y editar entradas de alimentos consumidos
 ## Integrantes
 * **Nombre:** Agustín Muñoz | **RUT:** 22.387.587-4 | **Usuario GitHub:** Agustin-Munoz-Vargas-UCN (https://github.com/Agustin-Munoz-Vargas-UCN) | **Carrera:** Ingeniería Civil en Computación e Informática (ICCI)
 
+## Estructura del Repositorio
+
+
+```text
+.
+├── README.md
+├── Agustin-Munoz-Vargas-UCN_POO_Taller02_Eclipse.zip
+└── taller02/
+    ├──.classpath
+    ├──.proyect
+    └── src/
+        ├── module-info.java
+        ├── textos/
+        │   ├── Consumido.txt
+        │   └── Participantes.txt
+        └── taller02/
+            ├── Choripan.java
+            ├── Comida.java
+            ├── Fecha.java
+            ├── Main.java **
+            ├── Persona.java
+            └── Terremoto.java
+```
+
 ---
 
 ## Clases presentes:
 
 1.   **Persona**     *(String nombre)*
 2.   **Comida**      *(Persona persona, String fecha)*
-2.1. **Choripan**    *(Persona persona, String fecha, float largo, float ancho)*
-2.2. **Terremoto**   *(Persona persona, String fecha, float litros)*
-3.   **Fecha**       *(int año, int mes, int dia, float litros)*
+3.   **Choripan**    *(Persona persona, String fecha, float largo, float ancho)* (hijo de Comida)
+4.   **Terremoto**   *(Persona persona, String fecha, float litros)* (hijo de Comida)
+5.   **Fecha**       *(int año, int mes, int dia, float litros)*
 
+## Más detalle de las clases:
+1.   **Persona**
+     * Cada persona guarda individualmente una serie de datos de cada uno de los intregrantes, siendo: el numero de choripanes (int numeroChoripan), numero de terremotos (int numeroTerremoto), KCAL totales (float numeroKCAL) y KCAL de choripane (float numeroKCALChoripan), litros totales consumidos (float numeroLitros) y un arreglo que contiene cada fecha en la cual el usuario consumió algo (Fecha[] registroDias).
 
+2.   **Comida**
+     * Funciona como base para sus clases hija, permitiendo-las guardarse en un mismo arreglo, y guardando la persona que consumió la comida (Persona persona) y la fecha en la que lo comió (String fecha).
 
+3.   **Choripan y Terremoto**
+     * Clases hijas de "Comida", "Choripan" guarda el largo (float largo) y ancho de la comida (float ancho), y "Terremoto" guarda unicamente los litros (float litros), cada uno calculando su cantidad de KCAL de forma diferente.
+
+4.   **Fecha**
+     * Guarda el año, mes y día (int año, int mes, int dia) en el cual se tomo un "Terremoto", y guarda los litros de "Terremoto" consumidos (float litros), permitiendo acumular lo consumido de distintas entradas que sean de la misma persona y día.
+       
 ---
 
 ## Estructuras de Datos y Decisiones Técnicas
@@ -34,25 +69,7 @@ El proyecto presente utilizo Programación Orientada a Objetos (POO) y arreglos 
      
 ---
 
-## Estructura del Repositorio
 
-
-```text
-.
-├── README.md
-├── Agustin-Munoz-Vargas-UCN_POO_Taller01_Eclipse.zip
-├── Agustin-Munoz-Vargas-UCN_POO_Taller01_Terminal.zip
-└── src/
-    ├── reportes/
-    │   ├── //ReporteC1-VX (Cantidad variable de archivos de reporte C1)
-    │   └── //ReporteC2-VX (Cantidad variable de archivos de reporte C2)
-    ├── textos/
-    │   ├── Alumnos.txt
-    │   └── Solicitudes.txt
-    ├── taller01/
-    │   └── Main.java
-    └── module-info.class
-```
 
 
 ---
