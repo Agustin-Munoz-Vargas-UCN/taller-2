@@ -641,7 +641,7 @@ public class Main {
 				scan.nextLine();
 				System.out.println("");
 				
-				scan.close();
+				//scan.close();
 			}catch (Exception InputMismatchxception)
 			{
 				System.out.println("[!] El valor presente no tiene el formato correcto, retornando...");
