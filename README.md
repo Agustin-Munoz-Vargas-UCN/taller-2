@@ -1,6 +1,6 @@
 # Taller 02 - "La fonda del Papu"
 
-Software hecho en Java para monitorear y editar entradas de alimentos consumidos de distintos usuarios 
+Software hecho en Java para monitorear y editar entradas de alimentos consumidos de distintos usuarios, monitoreando la cantidad y los KCAL de cada uno, permitiendo editar y añadir entradas, guardando estas en un archivo .txt para conservarse después de apagado el programa.
 ---
 
 ## Integrantes
@@ -94,7 +94,8 @@ El proyecto presente utilizo Programación Orientada a Objetos (POO) y arreglos 
 
 ## Requisitos del Entorno
 
-* Se requiere una computadora con Java instalado previamente. 
+* Se requiere una computadora con Java instalado previamente.
+* Es preferible el uso de alguna versión de "Eclipse IDE" para ejecutarlo
 
 ---
 
